@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AD-VISIONS project</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+</head>
+
+<body>
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio-items">
+                <div id="item1" class="portfolio-item">
+                    <img class="portfolio-item__image1" src="assets/img/portfolio_img1.jpg">
+                    
+                    <h2 class="portfolio-item__heading portfolio-item__heading--left">Aenean nec sem vestibulum</h2>
+                    <p class="portfolio-item__text portfolio-item__text--left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut diam ac felis placerat consequat in vitae justo. Curabitur porta et dolor ac.</p>
+                </div>
+                <div id="item2" class="portfolio-item portfolio-item-png1">
+                    <img class="portfolio-item__image2" src="assets/img/portfolio_img2.png">
+                    <h2 class="portfolio-item__heading ">Aenean nec sem vestibulum</h2>
+                    <p class="portfolio-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut diam ac felis placerat consequat in vitae justo. Curabitur porta et dolor ac. Morbi quis elementum ipsum</p>
+                </div>
+                <div id="item3" class="portfolio-item portfolio-item-png2">
+                    <img class="portfolio-item__image2" src="assets/img/portfolio_img3.png">
+                    <h2 class="portfolio-item__heading portfolio-item__heading--color">Aenean nec sem vestibulum</h2>
+                    <p class="portfolio-item__text portfolio-item__text--color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut diam ac felis placerat consequat in vitae justo. Curabitur porta et dolor ac. Morbi quis elementum ipsum</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+          $("#item1").hover(function(){
+            $("#item1").toggleClass("hover");
+          });
+        });
+        </script>
+</body>
+
+</html>
