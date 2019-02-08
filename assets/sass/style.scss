@@ -7,6 +7,8 @@
 }
 
 .portfolio {
+    margin-top: 60px;
+
     .portfolio-items {
         display: flex;
         justify-content: space-between;
@@ -18,6 +20,7 @@
             box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.13);
             padding: 14px;
             margin: 0 59px;
+            min-width: 250px;
             width: calc((100% / 3) - 118px);
             text-align: center !important;
             border-radius: 3%;
@@ -116,10 +119,11 @@
         }
     }
 
-    .more{
+    .more {
         text-align: center;
         margin-top: 82px;
-        .button{
+
+        .button {
             padding: 22px 72px 23px 73px;
             font-size: 25px;
             color: #6f32f8;
@@ -165,35 +169,72 @@
         background: linear-gradient(135deg, #7f37f5 0%, #1bd4db 50%, #7f37f5 100%);
     }
 
-    
+
 }
 
 .hover2 {
     display: inline-block !important;
     padding-top: 28px;
     margin-bottom: 40px;
- }
+}
 
- .hover3 {
+.hover3 {
     display: none !important;
- }
- .hover4 {
-    background: linear-gradient(145deg, #c165dd 0%,#5c27fe 100%);
-    &:before{
-        background: linear-gradient(-36deg, #c82cf8 0%,#5c27fe 100%);
-    }
- }
+}
 
- .hover5 {
+.hover4 {
+    background: linear-gradient(145deg, #c165dd 0%, #5c27fe 100%);
+
+    &:before {
+        background: linear-gradient(-36deg, #c82cf8 0%, #5c27fe 100%);
+    }
+}
+
+.hover5 {
     color: #fff !important;
- }
+}
 
- .hover6 {
+.hover6 {
     color: #c4c4c4 !important;
- }
+}
 
- .hover7 {
-    &:before{
-        background: linear-gradient(-36deg, #3626f7 0%,#310fba 100%);
+.hover7 {
+    &:before {
+        background: linear-gradient(-36deg, #3626f7 0%, #310fba 100%);
     }
- }
+}
+
+.hover8 {
+    color: #fff !important;
+    background: linear-gradient(145deg, #c165dd 0%, #5c27fe 100%);
+
+    &:before {
+        margin: 0 !important;
+    }
+}
+
+@media(max-width: 1440px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media(max-width: 1200px) {
+    .portfolio {
+        .portfolio-items {
+            flex-direction: column;
+
+            .portfolio-item {
+                margin-bottom: 150px;
+
+                &:after {
+                    right: 94px;
+                    top: 500px;
+                }
+            }
+        }
+        .more{
+            text-align: left;
+        }
+    }
+}
