@@ -149,11 +149,12 @@ body {
   .portfolio .portfolio-items .portfolio-item {
     position: relative;
     box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.13);
-    padding: 20px;
+    padding: 14px;
     margin: 0 59px;
     width: calc((100% / 3) - 118px);
     text-align: center;
-    border-radius: 3%; }
+    border-radius: 3%;
+    border: 6px solid transparent; }
     .portfolio .portfolio-items .portfolio-item .portfolio-item__heading.portfolio-item__heading--left {
       text-align: left; }
     .portfolio .portfolio-items .portfolio-item .portfolio-item__text.portfolio-item__text--left {
@@ -196,7 +197,10 @@ body {
       justify-content: center;
       align-items: center; }
   .portfolio .portfolio-items .portfolio-item-png1 {
-    border: 2px solid #e8e8e8; }
+    border: 2px solid #e8e8e8;
+    padding: 18px; }
+    .portfolio .portfolio-items .portfolio-item-png1 .portfolio-item__image2h {
+      display: none; }
   .portfolio .portfolio-items .portfolio-item-png2 {
     border: 2px solid transparent;
     background: url("../img/Bez-nazwy-4.jpg");
@@ -215,11 +219,12 @@ body {
       border-radius: inherit;
       background: linear-gradient(-36deg, #3626f7 0%, #310fba 100%); }
 
-.hover {
+.hover1 {
   background-clip: padding-box;
   position: relative !important;
-  border: 2px solid transparent !important; }
-  .hover:before {
+  background-color: #fff;
+  border: 6px solid transparent !important; }
+  .hover1:before {
     content: '';
     position: absolute !important;
     top: 0;
@@ -227,6 +232,8 @@ body {
     bottom: 0;
     left: 0;
     z-index: -1;
-    margin: -2px;
+    margin: -6px;
     border-radius: inherit;
-    background: linear-gradient(-36deg, #3626f7 0%, #310fba 100%); }
+    background: linear-gradient(135deg, #7f37f5 0%, #1bd4db 50%, #7f37f5 100%); }
+  .hover1 .hover2 {
+    display: block !important; }

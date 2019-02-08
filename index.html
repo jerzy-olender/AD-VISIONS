@@ -24,6 +24,7 @@
                 </div>
                 <div id="item2" class="portfolio-item portfolio-item-png1">
                     <img class="portfolio-item__image2" src="assets/img/portfolio_img2.png">
+                    <img class="portfolio-item__image2h" src="assets/img/portfolio_img3.png">
                     <h2 class="portfolio-item__heading ">Aenean nec sem vestibulum</h2>
                     <p class="portfolio-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut diam ac felis placerat consequat in vitae justo. Curabitur porta et dolor ac. Morbi quis elementum ipsum</p>
                 </div>
@@ -33,14 +34,22 @@
                     <p class="portfolio-item__text portfolio-item__text--color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut diam ac felis placerat consequat in vitae justo. Curabitur porta et dolor ac. Morbi quis elementum ipsum</p>
                 </div>
             </div>
-
+            <div class="more">
+                <button class="button">Aenean vitae</button>
+            </div>
         </div>
     </section>
     <script>
         $(document).ready(function(){
           $("#item1").hover(function(){
-            $("#item1").toggleClass("hover");
+            $("#item1").toggleClass("hover1");
           });
+
+          $("#item2").hover(function(){
+            $(".portfolio-item__image2h").toggleClass("hover2");
+            
+          });
+
         });
         </script>
 </body>
