@@ -152,7 +152,7 @@ body {
     padding: 14px;
     margin: 0 59px;
     width: calc((100% / 3) - 118px);
-    text-align: center;
+    text-align: center !important;
     border-radius: 3%;
     border: 6px solid transparent; }
     .portfolio .portfolio-items .portfolio-item .portfolio-item__heading.portfolio-item__heading--left {
@@ -237,4 +237,12 @@ body {
     background: linear-gradient(135deg, #7f37f5 0%, #1bd4db 50%, #7f37f5 100%); }
 
 .hover2 {
-  display: block !important; }
+  display: block !important;
+  padding-top: 28px;
+  margin-bottom: 43.11px; }
+
+.hover3 {
+  display: none !important; }
+
+.hover4 {
+  text-align: center !important; }
