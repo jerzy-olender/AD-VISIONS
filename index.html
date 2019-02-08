@@ -23,10 +23,10 @@
                     <p class="portfolio-item__text portfolio-item__text--left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut diam ac felis placerat consequat in vitae justo. Curabitur porta et dolor ac.</p>
                 </div>
                 <div id="item2" class="portfolio-item portfolio-item-png1">
-                    <img class="portfolio-item__image2" src="assets/img/portfolio_img2.png">
-                    <img class="portfolio-item__image2h" src="assets/img/portfolio_img3.png">
-                    <h2 class="portfolio-item__heading ">Aenean nec sem vestibulum</h2>
-                    <p class="portfolio-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut diam ac felis placerat consequat in vitae justo. Curabitur porta et dolor ac. Morbi quis elementum ipsum</p>
+                    <img id="img2" class="portfolio-item__image2" src="assets/img/portfolio_img2.png">
+                    <img id="img2h"class="portfolio-item__image2h" src="assets/img/portfolio_img3.png">
+                    <h2 id="h2" class="portfolio-item__heading ">Aenean nec sem vestibulum</h2>
+                    <p id="p2" class="portfolio-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut diam ac felis placerat consequat in vitae justo. Curabitur porta et dolor ac. Morbi quis elementum ipsum</p>
                 </div>
                 <div id="item3" class="portfolio-item portfolio-item-png2">
                     <img class="portfolio-item__image2" src="assets/img/portfolio_img3.png">
@@ -46,12 +46,16 @@
           });
 
           $("#item2").hover(function(){
-            $(".portfolio-item__image2h").toggleClass("hover2");
+            $("#item2").toggleClass("hover4");
+            $("#img2h").toggleClass("hover2");
+            $("#img2").toggleClass("hover3");
+            $("#h2").toggleClass("hover5");
+            $("#p2").toggleClass("hover6"); 
           });
 
-          $("#item2").hover(function(){
-            $("#item2").toggleClass("hover4");
-            $(".portfolio-item__image2").toggleClass("hover3");
+          $("#item3").hover(function(){
+            $("#item3").toggleClass("hover7");
+
           });
 
         });
