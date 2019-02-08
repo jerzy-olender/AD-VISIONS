@@ -235,5 +235,6 @@ body {
     margin: -6px;
     border-radius: inherit;
     background: linear-gradient(135deg, #7f37f5 0%, #1bd4db 50%, #7f37f5 100%); }
-  .hover1 .hover2 {
-    display: block !important; }
+
+.hover2 {
+  display: block !important; }
